@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Parcial - Programación 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <header id="top" class="cabecera shadow-lg p-3 mb-5">
+        <img class="logo" src="./resources/logo.png" alt="company logo">
+        <section class="navBar text-decoration-none">
+            <a href="#Banner">⚲ Inicio</a>
+            <a href="#Propiedades">🖹 Propiedades </a>
+            <a href="#Quienes-Somos">🛈 Quienes somos</a>
+            <a href="#Contactos">☏ Contactos</a>
+        </section>
+        <div class="informacion mt-2" style="text-align: right;">
+            Correo electrónico: ejemplo@inmobiliaria.com <br>
+            Sucursales: Cristóbal Colón 751, Rio Grande <br>
+            Horarios: Lunes a Viernes 9:00 - 18:00, Sábado 10:00 - 14:00 <br>
+        </div>
+    </header>
+
+    <a class="home-button" href="#top">
+        <img src="./resources/Home.png" alt="home" style="height: 100px; width: 100px;">
+    </a>
+
+    <section id="Banner" class="casa d-flex width-auto">
+        <div class="carta d-flex">
+            <img class="prop" src="./resources/propiedad.png" alt="propiedad destacada" style="width: 425px; height: 245px;">
+            <section class="p-1">
+                <h2>Propiedad destacada</h2>
+                Casa ubicada en la calle 25 de Mayo al 1500. 3 Dormitorios, 2 Baños, Entrada para vehiculos
+            </section>
+        </div>
+    </section>
+
+    <h1 class="titulo">Propiedades</h1>
+
+    <section id="Propiedades" class="casa d-flex">
+        <div class="carta c1 d-flex">
+            <img src="./resources/casaCentro.webp" alt="casa 1" style="width: 425px; height: 245px;">
+            <section>
+                <h2>Casa en venta en el Centro</h2>
+                Hermosa casa de 3 habitaciones y 2 baños.
+                <br>Precio: $200,000
+            </section>
+        </div>
+        <div class="carta c2 d-flex">
+            <img src="./resources/alquiler.webp" alt="casa 2" style="width: 425px; height: 245px;">
+            <section>
+                <h2>Departamento en Alquiler</h2>
+                Departamento de 2 habitaciones y 1 baño.
+                <br>Precio: $800/mes
+            </section>
+        </div>
+        <div class="carta c3 d-flex">
+            <img class src="./resources/terreno.jpg" alt="casa 3" style="width: 425px; height: 245px;">
+            <section>
+                <h2>Terreno en Venta</h2>
+                Terreno de 500m² en zona residencial.
+                <br>Precio: $50,000
+            </section>
+        </div>
+    </section>
+
+    <h1 class="titulo">Quienes somos</h1>
+
+    <section class="casa d-flex" id="Quienes-Somos">
+        <section class="casa carta info">
+            <h2>Historia de la empresa</h2>
+            <p>
+                    En el corazón de la ciudad, Inmobiliaria Horizonte era un refugio para quienes soñaban con un nuevo hogar. Don Alberto y su equipo guiaban a cada cliente en la búsqueda de su propiedad ideal, convirtiendo cada transacción en una experiencia memorable.
+                <br>    Más allá de la compraventa, la empresa se destacaba por su compromiso con la comunidad. Inmobiliaria Horizonte era más que un negocio, era una familia que construía sueños.
+            </p>
+        </section>
+
+        <section class="casa carta info">
+            <h2>Misión y visión</h2>
+            <p>
+                Ser la inmobiliaria de referencia en Tierra del fuego, brindando un servicio integral y personalizado con excelencia, transparencia y compromiso, Destacándonos por nuestra innovación, crecimiento y responsabilidad social.
+            </p>
+        </section>
+        
+        <section class="casa carta info">
+            <h2>Equipo de trabajo</h2>
+            <p>
+                    En Inmobiliaria XYZ, tenemos un equipo increíble que trabaja con pasión para lograr nuestras metas.
+                <br>Somos diversos, experimentados y colaborativos. Valoramos las diferentes perspectivas y trabajamos juntos para alcanzar el éxito.
+                <br>Nos apasiona lo que hacemos y siempre buscamos superarnos.
+            </p>
+        </section>
+
+        <section class="casa carta info">
+            <h2>Valores y compromiso con el cliente</h2>
+            <p>
+                    En [Nombre de la inmobiliaria], estamos comprometidos con:
+                <br>La honestidad y la transparencia: Brindamos información clara y precisa a nuestros clientes en todo momento.
+                <br>La profesionalidad: Ofrecemos un servicio de alta calidad, basado en la experiencia y el conocimiento del mercado inmobiliario.
+                <br>El compromiso social: Contribuimos al desarrollo de la comunidad en la que operamos.
+            </p>
+        </section>
+    </section>
+
+    <h1 class="titulo">Contactos</h1>
+
+    <section id="Contactos" class="casa d-flex width-auto">
+        <div class="carta d-flex formula">
+            <form class="text-align-left">
+                <input type="text" placeholder="Nombre"><br>
+                <br><input type="text" placeholder="Correo"><br>
+                <br><input type="tel" id="numTel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Teléfono"><br>
+                <br><textarea name="mensaje" id="msg" cols="30" rows="10">Mensaje:</textarea><br>
+                <br><input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footinfo ">
+            <a>Redes Sociales | </a><a>Políticas de privacidad | </a><a>Términos y Condiciones</a> 
+            <br><div class="footcopy">&copy; 2024 Inmobiliaria XYZ</div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>

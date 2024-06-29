@@ -1,0 +1,82 @@
+.cabecera{
+    background-color: #ca8f54;
+    position:sticky;
+    box-shadow: 0px 5px 20px #d6d6d6;
+}
+footer{
+    width: 100%;
+    background-color: #ca8f54;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 50px;
+}
+.navBar {
+    text-align: right;
+}
+a{
+    margin-right: 10px;
+}
+.footcopy{
+    text-align: center;
+}
+.footinfo{
+    text-align: center;
+}
+.banner-principal {
+    background-color: #efd9c2;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+@media (max-width:700px) {
+    .navBar {
+        position: relative;
+        bottom:100px;
+    }
+    .banner-principal {
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: 50px;
+    }
+}
+#Propiedades {
+    margin-top: 100px;
+}
+.home-button{
+    position: fixed;
+    bottom:50px;
+    right:10px;
+}
+.casa {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 10%;
+    margin: 10px;
+}
+.carta {
+    background-color: #b0926e;
+    padding: 10px;
+    box-shadow: 0px 5px 20px #d6d6d6;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+p{
+    padding: 5px;
+}
+.titulo {
+    text-align: center;
+}
+.info {
+    height: fit-content;
+}
+.formula {
+    width:fit-content;
+}
+input {
+    margin:10px;
+}
